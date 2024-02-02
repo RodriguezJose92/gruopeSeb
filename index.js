@@ -1,4 +1,4 @@
-/* Petición Sever__Mudi */
+/* Petición Sever__Mudi && TagComander*/
 async function serverData ({
     token = undefined,
     sku = undefined
