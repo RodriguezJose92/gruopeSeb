@@ -1,4 +1,4 @@
-/* Petición Sever__Mudi && TagComander*/
+/* Petición Sever__Mudi && TagComander __*/
 async function serverData ({
     token = undefined,
     sku = undefined
@@ -177,8 +177,6 @@ async function serverData ({
     else if ( navigator.userAgent.includes('iPhone') || navigator.userAgent.includes('iPad')) OSdevice="IOS";
     else OSdevice='DESK';
 
-    window.dataLayer = window.dataLayer || []
-
         tC.event.threeDimensionalViewing(this,{
             'event':'Evento de visualizacion Mudi',
             'valorMudi': '1',
@@ -192,7 +190,7 @@ async function serverData ({
 
         /** Evento de interación AR Mudi */
         document.getElementById('btnMudiAR').addEventListener('click',()=>{
-               tC.event.threeDimensionalViewing(this,{
+               tC.event.clickThreeDimensionalViewing(this,{
                     'event':'Evento interaccion AR',
                     'valorMudi': '1',
                     'sku':sku,
@@ -206,7 +204,7 @@ async function serverData ({
 
         /** Evento de interación 3D Mudi */
         document.getElementById('btnMudi3D').addEventListener('click',()=>{
-            tC.event.threeDimensionalViewing(this,{
+            tC.event.clickThreeDimensionalViewing(this,{
                 'event':'Evento interaccion 3D',
                 'valorMudi': '1',
                 'sku':sku,
